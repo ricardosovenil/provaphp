@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Somar Carga Horária</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 40px;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .voltar {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .voltar a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .voltar a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Atualizar Carga Horária</h2>
+    <form action="somar_carga.php" method="post">
+      <label for="matricula">Matrícula do Aluno:</label>
+      <input type="text" id="matricula" name="matricula" required>
+
+      <label for="nova_carga">Nova Carga Horária:</label>
+      <input type="number" id="nova_carga" name="nova_carga" required>
+
+      <button type="submit">Atualizar</button>
+    </form>
+
+    <div class="voltar">
+      <a href="index.html">← Voltar para o Início</a>
+    </div>
+  </div>
+</body>
+</html>
