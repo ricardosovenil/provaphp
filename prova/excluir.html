@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Excluir Aluno</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fefefe;
+      padding: 20px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    input[type="text"], button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      background: #d9534f;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #c9302c;
+    }
+  </style>
+</head>
+<body>
+  <h2>Excluir Aluno</h2>
+  <form action="excluir.php" method="post">
+    <label>Informe o Nome, Matrícula ou E-mail do Aluno:</label>
+    <input type="text" name="excluir" required />
+    <button type="submit">Excluir</button>
+  </form>
+</body>
+</html>
